@@ -1,7 +1,7 @@
 ## Вектор
 This role can install and configure Vector for Clickhouse на Centos 7
 
-## Роли и параметры
+## Переменные
 |vars	| Description	| Value	| Location |
 |-----|-------------|-------|----------|
 |vector_version |	Vector version to install	| 0.22.1	| defaults/main.yml |
