@@ -1,7 +1,7 @@
-## Vector
-This role can install and configure Vector for Clickhouse on Centos 7
+## Вектор
+This role can install and configure Vector for Clickhouse на Centos 7
 
-## Role Variables
+## Роли и параметры
 |vars	| Description	| Value	| Location |
 |-----|-------------|-------|----------|
 |vector_version |	Vector version to install	| 0.22.1	| defaults/main.yml |
@@ -13,7 +13,7 @@ This role can install and configure Vector for Clickhouse on Centos 7
 |vector_config	| Vector config file	| value below	| default/main.yml |
 
 vector_config 
-
+```bash
   sources:
     demo_logs:
       type: demo_logs
@@ -29,21 +29,21 @@ vector_config
       compression: gzip
       healthcheck: true
       skip_unknown_fields: true
-You can replace Vector config with your own
+```
 
-Example Playbook
+Playbook
+```bash
     - name: Install Vector
       hosts: servers
       roles:
         - vector
-
-
-
-
-
+```
+Meta
+```bash
 galaxy_info:
   author: Ruzina
   description: role for install and configure Vector for CLickhouse
   company: netology
   role_name: vector_role
   namespace: name
+```
