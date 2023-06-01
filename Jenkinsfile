@@ -1,7 +1,5 @@
 pipeline{
-    agent{
-        label '158.160.63.128'
-    }
+    agent any
     stages{
         stage('checkout git'){
             steps{
