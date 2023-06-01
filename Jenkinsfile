@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label 'docker'
+        label 'ansible'
     }
     stages{
         stage('checkout git'){
