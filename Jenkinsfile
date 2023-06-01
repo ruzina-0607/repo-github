@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label 'jenkins-agent-1'
+        label 'Centos-7'
     }
     stages{
         stage('checkout git'){
