@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label 'ansible'
+        label 'jenkins-agent-1'
     }
     stages{
         stage('checkout git'){
