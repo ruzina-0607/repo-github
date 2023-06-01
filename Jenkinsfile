@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label 'Centos-7'
+        label 'centos'
     }
     stages{
         stage('checkout git'){
