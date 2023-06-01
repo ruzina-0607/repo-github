@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label 'centos'
+        label '158.160.63.128'
     }
     stages{
         stage('checkout git'){
