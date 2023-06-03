@@ -1,5 +1,7 @@
 pipeline{
-    agent none
+    agent{
+        label 'agent'
+    }
     stages{
         stage('checkout git'){
             steps{
