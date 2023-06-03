@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label 'docker'
+        label 'linux'
     }
     stages{
         stage('checkout git'){
